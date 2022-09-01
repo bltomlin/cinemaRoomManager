@@ -10,4 +10,5 @@ Run the program
 2. `java manager.java`
 
 The output should be like in the example below and should contain 9 lines.
+<br>
 ![output](output.jpeg)
