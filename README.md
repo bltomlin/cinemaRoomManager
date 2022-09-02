@@ -45,5 +45,10 @@ Enter the number of rows:
 > 9
 Enter the number of seats in each row:
 > 7
-Total inc
+Enter the number of rows:
+> 9
+Enter the number of seats in each row:
+> 7
+Total income:
+$560
 ```
