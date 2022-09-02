@@ -13,48 +13,49 @@
 
 -If the total number of seats in the screen room is not more than 60, then the price of each ticket is 10 dollars.
 -In a larger room, the tickets are 10 dollars for the front half of the rows and 8 dollars for the back half. Please note that the number of rows can be odd, for example, 9 rows. In this case, the first half is the first 4 rows, and the second half is the other 5 rows.
-
+`
 <br>
 The greater-than symbol followed by a space (> ) represents the user input. Note that it's not part of the input.
 <br>
-`Example 1`
+Example 1
 <br>
-`Enter the number of rows:`
+Enter the number of rows:
 <br>
-`> 4`
+> 4
 <br>
-`Enter the number of seats in each row:`
+Enter the number of seats in each row:
 <br>
-`> 5`
+> 5
 <br>
-`Total income:`
+Total income:
 <br>
-`$200`
+$200
 <br>
 Example 2
 <br>
-`Enter the number of rows:`
+Enter the number of rows:
 <br>
-`> 8`
+> 8
 <br>
-`Enter the number of seats in each row:`
+Enter the number of seats in each row:
 <br>
-`> 9`
+> 9
 <br>
-`Total income:`
+Total income:
 <br>
-`$648`
+$648
 <br>
 Example 3
 <br>
-`Enter the number of rows:`
+Enter the number of rows:
 <br>
-`> 9`
+> 9
 <br>
-`Enter the number of seats in each row:`
+Enter the number of seats in each row:
 <br>
-`> 7`
+> 7
 <br>
-`Total income:`
+Total income:
 <br>
-`$560`
+$560
+`
