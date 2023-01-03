@@ -3,14 +3,7 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class Cinema {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number of rows:");
-        int numOfRows = scanner.nextInt();
-        System.out.println("Enter the number of seats in each row:");
-        int numOfSeats = scanner.nextInt();
-        int totalSeats = numOfRows * numOfSeats;
+    static void calculateProfit(int numOfRows, int numOfSeats, int totalSeats) {
         System.out.println("Total income:");
         if (totalSeats < 60) {
             int profit = totalSeats * 10;
@@ -30,5 +23,15 @@ public class Cinema {
                 System.out.println(printProfit);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of rows:");
+        int numOfRows = scanner.nextInt();
+        System.out.println("Enter the number of seats in each row:");
+        int numOfSeats = scanner.nextInt();
+        int totalSeats = numOfRows * numOfSeats;
+        calculateProfit(numOfRows, numOfSeats, totalSeats);
     }
 }
