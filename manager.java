@@ -25,12 +25,27 @@ public class Cinema {
         }
     }
 
+    static void printSeatArrangement(int numOfRows, int numOfSeats) {
+        System.out.print("  ");
+        for(int y = 1; y <= numOfSeats; y++) {
+            System.out.print(String.valueOf(y) + " ");
+        }
+        System.out.println();
+        for(int i = 1; i <= numOfRows; i++) {
+            System.out.print(String.valueOf(i) + " ");
+            for (int x = 1; x <= numOfSeats; x++) {
+                System.out.print("S ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of rows:");
         int numOfRows = scanner.nextInt();
         System.out.println("Enter the number of seats in each row:");
         int numOfSeats = scanner.nextInt();
+        printSeatArrangement(numOfRows, numOfSeats);
         int totalSeats = numOfRows * numOfSeats;
         calculateProfit(numOfRows, numOfSeats, totalSeats);
     }
