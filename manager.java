@@ -37,7 +37,7 @@ static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLay
         return seatLayout;
     }
 
-    static void ticketPrice ( int totalSeats, int numOfRows, int rowNum){
+    static void ticketPrice (int totalSeats, int numOfRows, int rowNum){
         if (totalSeats > 60) {
             int divider = numOfRows / 2;
             if (rowNum < divider) {
