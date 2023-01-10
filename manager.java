@@ -10,7 +10,7 @@ public class Cinema {
             System.out.print(y + 1 + " ");
         }
         System.out.println();
-        for (int i = 0; i <= numOfRows - 1; i++) {
+        for (int i = 0; i < numOfRows; i++) {
             System.out.print(i + 1  + " ");
             for (int x = 0; x <= numOfSeats - 1; x++) {
                 System.out.print(seatLayout[i][x] + " ");
