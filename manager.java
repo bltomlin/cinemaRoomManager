@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 public class Cinema {
 
-    static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLayout) {
+static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLayout) {
         System.out.println("Cinema:");
         System.out.print("  ");
-        for (int y = 0; y <= numOfSeats - 1; y++) {
-            System.out.print(y + 1 + " ");
+        for (int seatCoordinate = 0; seatCoordinate <= numOfSeats - 1; seatCoordinate++) {
+            System.out.print(seatCoordinate + 1 + " ");
         }
         System.out.println();
-        for (int i = 0; i < numOfRows; i++) {
-            System.out.print(i + 1  + " ");
-            for (int x = 0; x <= numOfSeats - 1; x++) {
-                System.out.print(seatLayout[i][x] + " ");
+        for (int row = 0; row < numOfRows; row++) {
+            System.out.print(row + 1  + " ");
+            for (int seat = 0; seat <= numOfSeats - 1; seat++) {
+                System.out.print(seatLayout[row][seat] + " ");
             }
             System.out.println();
         }
@@ -29,9 +29,9 @@ public class Cinema {
     }
 
     static char[][] initializeSeats(int numOfRows, int numOfSeats, char[][] seatLayout) {
-        for (int i = 0; i <= numOfRows - 1; i++) {
-            for (int x = 0; x < numOfSeats; x++) {
-                seatLayout[i][x] = 'S';
+        for (int row = 0; row <= numOfRows - 1; row++) {
+            for (int seat = 0; seat < numOfSeats; seat++) {
+                seatLayout[row][seat] = 'S';
             }
         }
         return seatLayout;
