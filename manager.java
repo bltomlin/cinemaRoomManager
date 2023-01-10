@@ -24,13 +24,8 @@ public class Cinema {
         int rowNum = rowNum() - 1;
         int seatNum = seatNum() - 1;
         ticketPrice(totalSeats, numOfRows, rowNum);
-        for (int i = 0; i <= numOfRows - 1; i++) {
-            for (int x = 0; x < numOfSeats; x++) {
-                if (i == rowNum && x == seatNum) {
-                    seatLayout[rowNum][seatNum] = 'B';
-                }
-            }
-        } return seatLayout;
+        seatLayout[rowNum][seatNum] = 'B';
+        return seatLayout;
     }
 
     static char[][] initializeSeats(int numOfRows, int numOfSeats, char[][] seatLayout) {
