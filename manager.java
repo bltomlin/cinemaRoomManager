@@ -71,7 +71,7 @@ static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLay
         return numOfSeats;
     }
 
-    static int seatNum () {
+    static int seatNum() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a seat number in that row:");
         int seatNum = scanner.nextInt();
