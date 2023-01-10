@@ -1,6 +1,7 @@
 package cinema;
 import java.util.Scanner;
 
+
 public class Cinema {
 
 static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLayout) {
@@ -41,6 +42,7 @@ static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLay
         if (totalSeats > 60) {
             int divider = numOfRows / 2;
             if (rowNum < divider) {
+
                 System.out.println("Ticket price: $10");
             } else {
                 System.out.println("Ticket price: $8");
@@ -57,12 +59,14 @@ static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLay
         return numOfRows;
 
     }
+
     static int rowNum () {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a row number:");
         int rowNum = scanner.nextInt();
         return rowNum;
     }
+
 
     static int numOfSeats () {
         Scanner scanner = new Scanner(System.in);
@@ -77,6 +81,7 @@ static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLay
         int seatNum = scanner.nextInt();
         return seatNum;
     }
+
 
     static void printMenu() {
         System.out.println("1. Show the seats");
@@ -112,6 +117,7 @@ static void printSeatArrangement(int numOfRows, int numOfSeats, char[][] seatLay
         seatLayout = initializeSeats(numOfRows, numOfSeats, seatLayout);
         int totalSeats = numOfRows * numOfSeats;
         menu(numOfSeats, numOfRows, totalSeats, seatLayout);
+
 
     }
 }
