@@ -16,77 +16,103 @@ If the total number of seats in the screen room is not more than 60, then the pr
 In a larger room, the tickets are 10 dollars for the front half of the rows and 8 dollars for the back half. Please note that the number of rows can be odd, for example, 9 rows. In this case, the first half is the first 4 rows, and the second half is the other 5 rows.
 <br><br>
 
-`The greater-than symbol followed by a space ( > ) represents the user input. Note that it's not part of the input.`
-
-**Example 1**
-
 ```
 Enter the number of rows:
-> 7
+> 6
 Enter the number of seats in each row:
-> 8
+> 6
 
-Cinema:
-  1 2 3 4 5 6 7 8
-1 S S S S S S S S
-2 S S S S S S S S
-3 S S S S S S S S
-4 S S S S S S S S
-5 S S S S S S S S
-6 S S S S S S S S
-7 S S S S S S S S
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 3
+
+Number of purchased tickets: 0
+Percentage: 0.00%
+Current income: $0
+Total income: $360
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 2
 
 Enter a row number:
-> 3
+> 1
 Enter a seat number in that row:
-> 6
+> 1
 
 Ticket price: $10
 
-Cinema:
-  1 2 3 4 5 6 7 8
-1 S S S S S S S S
-2 S S S S S S S S
-3 S S S S S B S S
-4 S S S S S S S S
-5 S S S S S S S S
-6 S S S S S S S S
-7 S S S S S S S S
-```
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 3
 
-**Example 2**
-```
-Enter the number of rows:
-> 8
-Enter the number of seats in each row:
-> 9
+Number of purchased tickets: 1
+Percentage: 2.78%
+Current income: $10
+Total income: $360
 
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S
-2 S S S S S S S S S
-3 S S S S S S S S S
-4 S S S S S S S S S
-5 S S S S S S S S S
-6 S S S S S S S S S
-7 S S S S S S S S S
-8 S S S S S S S S S
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 2
 
 Enter a row number:
-> 6
+> 1
 Enter a seat number in that row:
-> 5
+> 1
 
-Ticket price: $8
+That ticket has already been purchased!
+
+Enter a row number:
+> 10
+Enter a seat number in that row:
+> 20
+
+Wrong input!
+
+Enter a row number:
+> 4
+Enter a seat number in that row:
+> 4
+
+Ticket price: $10
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 1
 
 Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S
-2 S S S S S S S S S
-3 S S S S S S S S S
-4 S S S S S S S S S
-5 S S S S S S S S S
-6 S S S S B S S S S
-7 S S S S S S S S S
-8 S S S S S S S S S
+  1 2 3 4 5 6
+1 B S S S S S
+2 S S S S S S
+3 S S S S S S
+4 S S S B S S
+5 S S S S S S
+6 S S S S S S
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 3
+
+Number of purchased tickets: 2
+Percentage: 5.56%
+Current income: $20
+Total income: $360
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+> 0
 ```
